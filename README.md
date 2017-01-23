@@ -25,3 +25,5 @@ If you're thinking that the VM has become corrupted, wipe it by
 
 And restart as above.
 
+Files in the same directory as the `Vagrantfile` and the `provision.sh` file appear in the `/vagrant` directory in the virtual machine.
+ 
