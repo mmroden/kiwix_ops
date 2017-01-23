@@ -5,7 +5,7 @@ sudo apt-get install -y advancecomp gifiscle imagemagick m4 automake lzma lzma-d
 sudo apt-get install -y liblzma-dev pkg-config libmagic-dev zlib1g-dev libgumbo-dev
 sudo apt-get install -y icu-devtools libicu-dev tcl screen
 
-sudo apt-get install -y git cmake meson python3-virtualenv virtualenvwraper aria libtool
+sudo apt-get install -y git cmake meson python3-virtualenv virtualenvwrapper aria2 libtool
 sudo apt-get install -y libxapian-dev libpng-dev m4
 
 git clone https://gerrit.wikimedia.org/r/p/openzim.git
