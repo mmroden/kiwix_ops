@@ -8,6 +8,10 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/xenial64"
 
+  # bump up memory
+  config.vm.provider "virtualbox" do |vb|
+      vb.memory = "28048"
+  end
   # Not sure if you need a forwarded port
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
@@ -21,6 +25,7 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    /vagrant/provision.sh
+    sudo /vagrant/provision.sh
   SHELL
 end
+
