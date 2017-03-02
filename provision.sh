@@ -1,6 +1,7 @@
 #!/bin/bash
 
 whoami
+apt-get update
 apt-get install -y build-essential git libtool nodejs npm nodejs-legacy jpegoptim
 apt-get install -y advancecomp gifsicle imagemagick m4 automake lzma lzma-dev
 apt-get install -y liblzma-dev pkg-config libmagic-dev zlib1g-dev libgumbo-dev
@@ -52,7 +53,10 @@ make
 make install
 cd ..
 
+sudo chown -R ubuntu:ubuntu ~/mwoffliner
+
 echo 'ready to start redis and mwoffliner'
-redis-server redis-stable/redis.conf
+
+# redis-server redis-stable/redis.conf
 
 
